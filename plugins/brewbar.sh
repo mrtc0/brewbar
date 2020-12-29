@@ -1,6 +1,9 @@
 #!/bin/bash
 
 IFS=$'\n'
+
+_=$(/usr/local/bin/brew update)
+
 json=$(/usr/local/bin/brew outdated --json=v2)
 
 count=$(echo $json | /usr/local/bin/jq -r '(.formulae | length) + (.casks | length)')
