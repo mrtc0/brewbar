@@ -1,6 +1,6 @@
 # brewbar
 
-List outdated packages in Homebrew.
+Display outdated packages installed by Homebrew with bitbar.
 
 ![brewbar screenshot](./misc/brewbar-outdated-package.png)
 
