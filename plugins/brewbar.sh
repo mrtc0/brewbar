@@ -11,7 +11,7 @@ count=$(echo $json | /usr/local/bin/jq -r '(.formulae | length) + (.casks | leng
 if [ $count -eq 0 ]; then
   echo ":beer:"
 else
-  echo ":beer: :warning: | color=red"
+  echo ":beer: :warning: (${count}) | color=red"
 fi
 echo "---"
 echo ":warning: Outdated packages (${count})"
